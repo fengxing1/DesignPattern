@@ -48,6 +48,11 @@
 		8BA716641E30A1EB00D453B9 /* macroCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA716631E30A1EB00D453B9 /* macroCommand.m */; };
 		8BA716691E30BAC000D453B9 /* NationalDayStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA716681E30BAC000D453B9 /* NationalDayStrategy.m */; };
 		8BA7166C1E30BCC600D453B9 /* PriceContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7166B1E30BCC600D453B9 /* PriceContext.m */; };
+		8BA716741E31F70C00D453B9 /* NoQuarterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA716731E31F70C00D453B9 /* NoQuarterState.m */; };
+		8BA716771E31F74400D453B9 /* GumabllMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA716761E31F74400D453B9 /* GumabllMachine.m */; };
+		8BA7167A1E3209DD00D453B9 /* HasQUarterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA716791E3209DD00D453B9 /* HasQUarterState.m */; };
+		8BA7167D1E320C6800D453B9 /* SoldingState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7167C1E320C6800D453B9 /* SoldingState.m */; };
+		8BA716801E320ED600D453B9 /* SoldOutState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7167F1E320ED600D453B9 /* SoldOutState.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +153,17 @@
 		8BA716681E30BAC000D453B9 /* NationalDayStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NationalDayStrategy.m; sourceTree = "<group>"; };
 		8BA7166A1E30BCC600D453B9 /* PriceContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceContext.h; sourceTree = "<group>"; };
 		8BA7166B1E30BCC600D453B9 /* PriceContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceContext.m; sourceTree = "<group>"; };
+		8BA716711E31F44600D453B9 /* StateInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateInterface.h; sourceTree = "<group>"; };
+		8BA716721E31F70C00D453B9 /* NoQuarterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoQuarterState.h; sourceTree = "<group>"; };
+		8BA716731E31F70C00D453B9 /* NoQuarterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoQuarterState.m; sourceTree = "<group>"; };
+		8BA716751E31F74400D453B9 /* GumabllMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GumabllMachine.h; sourceTree = "<group>"; };
+		8BA716761E31F74400D453B9 /* GumabllMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GumabllMachine.m; sourceTree = "<group>"; };
+		8BA716781E3209DD00D453B9 /* HasQUarterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasQUarterState.h; sourceTree = "<group>"; };
+		8BA716791E3209DD00D453B9 /* HasQUarterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasQUarterState.m; sourceTree = "<group>"; };
+		8BA7167B1E320C6800D453B9 /* SoldingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoldingState.h; sourceTree = "<group>"; };
+		8BA7167C1E320C6800D453B9 /* SoldingState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoldingState.m; sourceTree = "<group>"; };
+		8BA7167E1E320ED600D453B9 /* SoldOutState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoldOutState.h; sourceTree = "<group>"; };
+		8BA7167F1E320ED600D453B9 /* SoldOutState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoldOutState.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +205,7 @@
 		8BA715BC1E2728C400D453B9 /* DesignPatternProject */ = {
 			isa = PBXGroup;
 			children = (
+				8BA7166D1E31F39200D453B9 /* State 状态模式 */,
 				8BA716651E30B93200D453B9 /* Strategy 策略模式 */,
 				8BA716431E2F60DE00D453B9 /* Command 命令模式 */,
 				8BA716361E2E1ACD00D453B9 /* Proxy 代理 */,
@@ -404,6 +421,25 @@
 			path = Strategy;
 			sourceTree = "<group>";
 		};
+		8BA7166D1E31F39200D453B9 /* State 状态模式 */ = {
+			isa = PBXGroup;
+			children = (
+				8BA716711E31F44600D453B9 /* StateInterface.h */,
+				8BA716751E31F74400D453B9 /* GumabllMachine.h */,
+				8BA716761E31F74400D453B9 /* GumabllMachine.m */,
+				8BA716721E31F70C00D453B9 /* NoQuarterState.h */,
+				8BA716731E31F70C00D453B9 /* NoQuarterState.m */,
+				8BA716781E3209DD00D453B9 /* HasQUarterState.h */,
+				8BA716791E3209DD00D453B9 /* HasQUarterState.m */,
+				8BA7167B1E320C6800D453B9 /* SoldingState.h */,
+				8BA7167C1E320C6800D453B9 /* SoldingState.m */,
+				8BA7167E1E320ED600D453B9 /* SoldOutState.h */,
+				8BA7167F1E320ED600D453B9 /* SoldOutState.m */,
+			);
+			name = "State 状态模式";
+			path = State;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -537,8 +573,13 @@
 				8BA7164E1E2F6A0200D453B9 /* LightOnCommand.m in Sources */,
 				8BA7165D1E3059A000D453B9 /* NoCommand.m in Sources */,
 				8BA7165A1E2F89B500D453B9 /* RemoteControl.m in Sources */,
+				8BA7167A1E3209DD00D453B9 /* HasQUarterState.m in Sources */,
+				8BA716741E31F70C00D453B9 /* NoQuarterState.m in Sources */,
 				8BA7160F1E2C7A5200D453B9 /* AccessUser.m in Sources */,
+				8BA7167D1E320C6800D453B9 /* SoldingState.m in Sources */,
 				8BA7164A1E2F666B00D453B9 /* CDPlayer.m in Sources */,
+				8BA716801E320ED600D453B9 /* SoldOutState.m in Sources */,
+				8BA716771E31F74400D453B9 /* GumabllMachine.m in Sources */,
 				8BA716411E2E20FD00D453B9 /* RealSubject.m in Sources */,
 				8BA715C21E2728C400D453B9 /* AppDelegate.m in Sources */,
 				8BA716161E2CC67000D453B9 /* SqlServerFactory.m in Sources */,
